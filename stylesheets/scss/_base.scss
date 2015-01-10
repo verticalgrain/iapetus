@@ -1,4 +1,12 @@
 html,
 body {
-
+	background: black;
+	margin: 0;
+}
+* {
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.td {
+	@include transition-duration(0.5s);
 }
