@@ -252,5 +252,13 @@ body {
   background-image: url(../../images/hero/saturn.png);
   background-position: center center;
 }
+/* line 18, ../scss/partials/_hero.scss */
+.hero .iapetus {
+  width: 1200px;
+  height: 1200px;
+  display: block;
+  background-image: url(../../images/hero/iapetus.png);
+  background-position: center center;
+}
 
 /*# sourceMappingURL=screen.css.map */

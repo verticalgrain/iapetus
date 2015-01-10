@@ -15,8 +15,11 @@
 		background-position: center center;
 		@extend .td;
 	}
-
 	.iapetus {
-
+		width: 1200px;
+		height: 1200px;
+		display: block;
+		background-image: url(../../images/hero/iapetus.png);
+		background-position: center center;
 	}
 }
