@@ -1,1 +1,8 @@
 .sass-cache
+.DS_Store
+**/.DS_Store
+node_modules
+**/node_modules
+**/.sass-cache
+*.gz
+*.zip
