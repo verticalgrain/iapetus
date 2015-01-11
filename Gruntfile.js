@@ -22,6 +22,7 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'js/src/vendor/modernizr-custom.js',
+          'js/src/vendor/skrollr.min.js',
           'js/src/app.js',
           'js/src/directives/{,*/}*.js',
           'js/src/controllers/{,*/}*.js',
