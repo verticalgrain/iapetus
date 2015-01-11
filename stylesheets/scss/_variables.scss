@@ -55,3 +55,9 @@ $color-canvas-alt: #333; // an alternate canvas colour
 $color-base: #333; // the colour of most body text
 $color-base-alt: #eee; // alternate body text colour, probably used over $color-canvas-alt
 $color-keyline: #666; // line dividers
+
+// Block heights
+// These blocks are used as elements that contain skrollr stuff - using explicit heights for sanity
+$blockshort: 1000px;
+$blockmedium: 2000px;
+$blocktall: 3000px;

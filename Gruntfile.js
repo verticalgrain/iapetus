@@ -23,7 +23,10 @@ module.exports = function(grunt) {
         src: [
           'js/src/vendor/modernizr-custom.js',
           'js/src/app.js',
-          'js/src/modules/{,*/}*.js'
+          'js/src/directives/{,*/}*.js',
+          'js/src/controllers/{,*/}*.js',
+          'js/src/filters/{,*/}*.js',
+          'js/src/services/{,*/}*.js',
         ],
         dest: 'js/build/<%= pkg.name %>.js'
       }
