@@ -138,37 +138,42 @@ body {
 /* line 1, ../scss/partials/_hero.scss */
 .hero {
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
   height: 4000px;
   position: relative;
   background: black;
   overflow-x: hidden;
+  background: url(../../images/background/starfield.jpg) repeat 0 0;
   background-attachment: fixed;
-  background-size: 300px;
 }
-/* line 13, ../scss/partials/_hero.scss */
+/* line 10, ../scss/partials/_hero.scss */
 .hero .hero-inner {
   position: fixed;
   width: 100%;
   height: 100%;
-  -moz-animation: iapetus 20s forwards;
-  -webkit-animation: iapetus 20s forwards;
-  animation: iapetus 20s forwards;
 }
-/* line 19, ../scss/partials/_hero.scss */
+/* line 16, ../scss/partials/_hero.scss */
+.hero .stars {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url(../../images/background/starfield.jpg) repeat 0 0;
+}
+/* line 26, ../scss/partials/_hero.scss */
 .hero .saturn {
   width: 160px;
   height: 160px;
   display: block;
   position: absolute;
-  z-index: 2;
-  left: 0;
-  top: 420px;
+  z-index: 3;
+  right: 100px;
+  top: 0px;
   background-image: url(../../images/hero/saturn.png);
   background-position: center center;
 }
-/* line 30, ../scss/partials/_hero.scss */
+/* line 38, ../scss/partials/_hero.scss */
 .hero .iapetus {
   width: 70%;
   height: 800px;
@@ -179,6 +184,17 @@ body {
   top: -25%;
   background-image: url(../../images/hero/iapetus-rotated.png);
   background-position: left top;
+}
+/* line 50, ../scss/partials/_hero.scss */
+.hero .iapetus-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  bottom: 0px;
+  left: 0;
+  background: url(../../images/hero/Crescent_Dione-3000w.png) no-repeat left bottom;
+  background-size: auto 75vh;
 }
 
 @-moz-keyframes iapetus {
@@ -324,24 +340,131 @@ body {
     margin-top: 0px;
   }
 }
+@-moz-keyframes stars {
+  0% {
+    -moz-transform: translate3D(0px, 0px, 0px);
+    transform: translate3D(0px, 0px, 0px);
+  }
+  100% {
+    -moz-transform: translate3D(-20px, -30px, 0px);
+    transform: translate3D(-20px, -30px, 0px);
+  }
+}
+@-webkit-keyframes stars {
+  0% {
+    -webkit-transform: translate3D(0px, 0px, 0px);
+    transform: translate3D(0px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3D(-20px, -30px, 0px);
+    transform: translate3D(-20px, -30px, 0px);
+  }
+}
+@keyframes stars {
+  0% {
+    -moz-transform: translate3D(0px, 0px, 0px);
+    -ms-transform: translate3D(0px, 0px, 0px);
+    -webkit-transform: translate3D(0px, 0px, 0px);
+    transform: translate3D(0px, 0px, 0px);
+  }
+  100% {
+    -moz-transform: translate3D(-20px, -30px, 0px);
+    -ms-transform: translate3D(-20px, -30px, 0px);
+    -webkit-transform: translate3D(-20px, -30px, 0px);
+    transform: translate3D(-20px, -30px, 0px);
+  }
+}
+@-moz-keyframes saturn {
+  0% {
+    -moz-transform: translate3D(0px, 0px, 0px) scale(1);
+    transform: translate3D(0px, 0px, 0px) scale(1);
+  }
+  100% {
+    -moz-transform: translate3D(-10px, -40px, 0px) scale(1.15);
+    transform: translate3D(-10px, -40px, 0px) scale(1.15);
+  }
+}
+@-webkit-keyframes saturn {
+  0% {
+    -webkit-transform: translate3D(0px, 0px, 0px) scale(1);
+    transform: translate3D(0px, 0px, 0px) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3D(-10px, -40px, 0px) scale(1.15);
+    transform: translate3D(-10px, -40px, 0px) scale(1.15);
+  }
+}
+@keyframes saturn {
+  0% {
+    -moz-transform: translate3D(0px, 0px, 0px) scale(1);
+    -ms-transform: translate3D(0px, 0px, 0px) scale(1);
+    -webkit-transform: translate3D(0px, 0px, 0px) scale(1);
+    transform: translate3D(0px, 0px, 0px) scale(1);
+  }
+  100% {
+    -moz-transform: translate3D(-10px, -40px, 0px) scale(1.15);
+    -ms-transform: translate3D(-10px, -40px, 0px) scale(1.15);
+    -webkit-transform: translate3D(-10px, -40px, 0px) scale(1.15);
+    transform: translate3D(-10px, -40px, 0px) scale(1.15);
+  }
+}
+@-moz-keyframes iapetus-full {
+  0% {
+    -moz-transform: translate3D(0px, 0px, 0px) scale(1);
+    transform: translate3D(0px, 0px, 0px) scale(1);
+  }
+  100% {
+    -moz-transform: translate3D(-10px, -10px, 0px) scale(1.08);
+    transform: translate3D(-10px, -10px, 0px) scale(1.08);
+  }
+}
+@-webkit-keyframes iapetus-full {
+  0% {
+    -webkit-transform: translate3D(0px, 0px, 0px) scale(1);
+    transform: translate3D(0px, 0px, 0px) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3D(-10px, -10px, 0px) scale(1.08);
+    transform: translate3D(-10px, -10px, 0px) scale(1.08);
+  }
+}
+@keyframes iapetus-full {
+  0% {
+    -moz-transform: translate3D(0px, 0px, 0px) scale(1);
+    -ms-transform: translate3D(0px, 0px, 0px) scale(1);
+    -webkit-transform: translate3D(0px, 0px, 0px) scale(1);
+    transform: translate3D(0px, 0px, 0px) scale(1);
+  }
+  100% {
+    -moz-transform: translate3D(-10px, -10px, 0px) scale(1.08);
+    -ms-transform: translate3D(-10px, -10px, 0px) scale(1.08);
+    -webkit-transform: translate3D(-10px, -10px, 0px) scale(1.08);
+    transform: translate3D(-10px, -10px, 0px) scale(1.08);
+  }
+}
 /* line 1, ../scss/partials/_sunlit.scss */
 .sunlit {
   width: 100%;
   height: 100%;
   display: block;
+  float: left;
   min-height: 100vh;
   height: 4000px;
   position: relative;
   overflow-x: hidden;
+  background-color: blue;
 }
-/* line 10, ../scss/partials/_sunlit.scss */
+/* line 11, ../scss/partials/_sunlit.scss */
 .sunlit .sunlit-inner {
-  position: fixed;
+  position: relative;
+  float: left;
+  top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
+  background-color: green;
 }
 
 /*# sourceMappingURL=screen.css.map */
